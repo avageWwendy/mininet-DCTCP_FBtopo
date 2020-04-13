@@ -1,5 +1,5 @@
 from mininet.topo import Topo
-k = 2
+k = 4
 
 # reference: https://www.cs.cornell.edu/courses/cs5413/2014fa/lectures/08-fattree.pdf
 
@@ -10,10 +10,10 @@ class FatTree(Topo):
 
         # create elements
         aggr_switch = []
-        for i in range(k*k//2):
+        for i in range(int(k*k/2)):
             aggr_switch.append(self.addSwitch("aggr_%s" % str(i)))
         edge_switch = []
-        for i in range(k*k//2):
+        for i in range(int(k*k/2)):
             edge_switch.append(self.addSwitch("edge_%s" % str(i)))
         core_switch = []
         for i in range(k):
@@ -27,7 +27,7 @@ class FatTree(Topo):
             # which aggr should be connected to
             aggr_offset = c / 2
             for a in range(k):
-                self.addLink(core, aggr_switch[k * a // 2 + aggr_offset])
+                self.addLink(core, aggr_switch[int(k * a / 2 + aggr_offset)])
         
         print("finished creating core-aggr")
         
@@ -35,9 +35,9 @@ class FatTree(Topo):
         for p in range(k):
             for a in range(int(k/2)):
                 # print(p * k / 2 + a)
-                aggr = aggr_switch[p * k // 2 + a]
+                aggr = aggr_switch[int(p * k / 2 + a)]
                 for e in range(int(k/2)):
-                    edge = edge_switch[p * k // 2 + e]
+                    edge = edge_switch[int(p * k / 2 + e)]
                     self.addLink(aggr, edge)
         
         print("finished creating aggr-edge")
@@ -45,7 +45,7 @@ class FatTree(Topo):
         # add host to edges
         h = 0
         for edge in edge_switch:
-            for i in range(k//2):
+            for i in range(int(k/2)):
                 self.addLink(edge, self.addHost("host_%s" % str(h)))
                 h += 1
         

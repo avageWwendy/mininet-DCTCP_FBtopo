@@ -1,0 +1,8 @@
+dpctl add-flow "in_port=1,actions=output:2"
+dpctl add-flow "in_port=2,actions=output:1"
+dpctl dump-flows
+
+sudo mn --custom fbtopo/fattree_topo.py --topo fattree --switch lxbr,stp=1
+sudo mn --custom fbtopo/facebook_fattree_topo.py --topo facebook_fattree --switch lxbr,stp=1 --link tc
+sh brctl show edge_0
+net.waitConnected()

@@ -1,6 +1,5 @@
 from mininet.topo import Topo
-
-
+from mininet.link import TCLink
 
 HOST_PER_NODE       = 2
 LINK_BW             = 10
@@ -50,7 +49,7 @@ class FacebookFatTree(Topo):
                 h += 1
         print("finished creating hosts")
 
-topos = { 'facebook_fattree': ( lambda: FacebookFatTree(8) ) }
+topos = { 'facebook_fattree': ( lambda: FacebookFatTree(4) ) }
 
 
 

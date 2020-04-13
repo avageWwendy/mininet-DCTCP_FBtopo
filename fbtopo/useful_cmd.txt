@@ -1,3 +1,0 @@
-dpctl add-flow "in_port=1,actions=output:2"
-dpctl add-flow "in_port=2,actions=output:1"
-dpctl dump-flows
