@@ -1,0 +1,791 @@
+*** errRun: ['which', 'controller'] 
+/usr/local/bin/controller
+  0*** errRun: ['grep', '-c', 'processor', '/proc/cpuinfo'] 
+1
+  0*** Setting resource limits
+*** Creating network
+*** Adding controller
+*** errRun: ['which', 'mnexec'] 
+/usr/bin/mnexec
+  0*** errRun: ['which', 'ifconfig'] 
+/sbin/ifconfig
+  0_popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:c0'] 4131*** c0 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+*** errRun: ['which', 'telnet'] 
+/usr/bin/telnet
+  0*** c0 : ('echo A | telnet -e A 127.0.0.1 6653',)
+Telnet escape character is 'A'.
+Trying 127.0.0.1...
+telnet: Unable to connect to remote host: Connection refused
+*** Adding hosts:
+*** errRun: ['which', 'mnexec'] 
+/usr/bin/mnexec
+  0*** errRun: ['which', 'ifconfig'] 
+/sbin/ifconfig
+  0_popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_0'] 4138*** host_0 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_0 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_1'] 4140*** host_1 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_1 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_2'] 4142*** host_2 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_2 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_3'] 4144*** host_3 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_3 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_4'] 4146*** host_4 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_4 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_5'] 4148*** host_5 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_5 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_6'] 4150*** host_6 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_6 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_7'] 4152*** host_7 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_7 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_8'] 4154*** host_8 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_8 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_9'] 4156*** host_9 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_9 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_10'] 4158*** host_10 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_10 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_11'] 4160*** host_11 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_11 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_12'] 4162*** host_12 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_12 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_13'] 4164*** host_13 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_13 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_14'] 4166*** host_14 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_14 _popen ['mnexec', '-cdn', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:host_15'] 4168*** host_15 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+host_15 
+*** Adding switches:
+*** errRun: ['which', 'ovs-vsctl'] 
+/usr/bin/ovs-vsctl
+  0*** errRun: ['ovs-vsctl', '-t', '1', 'show'] 
+30f12341-a468-4d41-8c1a-70426f717061
+    ovs_version: "2.9.5"
+  0*** errRun: ['ovs-vsctl', '--version'] 
+ovs-vsctl (Open vSwitch) 2.9.5
+DB Schema 7.15.1
+  0_popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:aggr_0'] 4173*** aggr_0 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node aggr_0
+*** aggr_0 : ('ifconfig', 'lo', 'up')
+aggr_0 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:aggr_1'] 4176*** aggr_1 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node aggr_1
+*** aggr_1 : ('ifconfig', 'lo', 'up')
+aggr_1 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:aggr_2'] 4179*** aggr_2 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node aggr_2
+*** aggr_2 : ('ifconfig', 'lo', 'up')
+aggr_2 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:aggr_3'] 4182*** aggr_3 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node aggr_3
+*** aggr_3 : ('ifconfig', 'lo', 'up')
+aggr_3 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:aggr_4'] 4185*** aggr_4 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node aggr_4
+*** aggr_4 : ('ifconfig', 'lo', 'up')
+aggr_4 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:aggr_5'] 4188*** aggr_5 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node aggr_5
+*** aggr_5 : ('ifconfig', 'lo', 'up')
+aggr_5 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:aggr_6'] 4191*** aggr_6 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node aggr_6
+*** aggr_6 : ('ifconfig', 'lo', 'up')
+aggr_6 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:aggr_7'] 4194*** aggr_7 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node aggr_7
+*** aggr_7 : ('ifconfig', 'lo', 'up')
+aggr_7 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:core_0'] 4197*** core_0 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node core_0
+*** core_0 : ('ifconfig', 'lo', 'up')
+core_0 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:core_1'] 4200*** core_1 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node core_1
+*** core_1 : ('ifconfig', 'lo', 'up')
+core_1 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:core_2'] 4203*** core_2 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node core_2
+*** core_2 : ('ifconfig', 'lo', 'up')
+core_2 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:core_3'] 4206*** core_3 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node core_3
+*** core_3 : ('ifconfig', 'lo', 'up')
+core_3 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:edge_0'] 4209*** edge_0 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node edge_0
+*** edge_0 : ('ifconfig', 'lo', 'up')
+edge_0 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:edge_1'] 4212*** edge_1 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node edge_1
+*** edge_1 : ('ifconfig', 'lo', 'up')
+edge_1 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:edge_2'] 4215*** edge_2 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node edge_2
+*** edge_2 : ('ifconfig', 'lo', 'up')
+edge_2 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:edge_3'] 4218*** edge_3 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node edge_3
+*** edge_3 : ('ifconfig', 'lo', 'up')
+edge_3 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:edge_4'] 4221*** edge_4 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node edge_4
+*** edge_4 : ('ifconfig', 'lo', 'up')
+edge_4 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:edge_5'] 4224*** edge_5 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node edge_5
+*** edge_5 : ('ifconfig', 'lo', 'up')
+edge_5 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:edge_6'] 4227*** edge_6 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node edge_6
+*** edge_6 : ('ifconfig', 'lo', 'up')
+edge_6 _popen ['mnexec', '-cd', 'env', 'PS1=\x7f', 'bash', '--norc', '--noediting', '-is', 'mininet:edge_7'] 4230*** edge_7 : ('unset HISTFILE; stty -echo; set +m',)
+unset HISTFILE; stty -echo; set +m
+
+added intf lo (0) to node edge_7
+*** edge_7 : ('ifconfig', 'lo', 'up')
+edge_7 
+*** Adding links:
+*** aggr_0 : ('ip link add name aggr_0-eth3 address 6a:eb:c8:22:8b:41 type veth peer name edge_0-eth1 address 6e:81:bf:b3:0c:b8 netns 4209',)
+
+added intf aggr_0-eth3 (3) to node aggr_0
+*** aggr_0 : ('ifconfig', 'aggr_0-eth3', 'up')
+
+added intf edge_0-eth1 (1) to node edge_0
+*** edge_0 : ('ifconfig', 'edge_0-eth1', 'up')
+(aggr_0, edge_0) *** aggr_0 : ('ip link add name aggr_0-eth4 address 92:67:b9:ee:70:7d type veth peer name edge_1-eth1 address 1e:7c:e5:7a:c2:3e netns 4212',)
+
+added intf aggr_0-eth4 (4) to node aggr_0
+*** aggr_0 : ('ifconfig', 'aggr_0-eth4', 'up')
+
+added intf edge_1-eth1 (1) to node edge_1
+*** edge_1 : ('ifconfig', 'edge_1-eth1', 'up')
+(aggr_0, edge_1) *** aggr_1 : ('ip link add name aggr_1-eth3 address 8e:9c:39:ca:4f:61 type veth peer name edge_0-eth2 address 36:54:04:e5:2f:86 netns 4209',)
+
+added intf aggr_1-eth3 (3) to node aggr_1
+*** aggr_1 : ('ifconfig', 'aggr_1-eth3', 'up')
+
+added intf edge_0-eth2 (2) to node edge_0
+*** edge_0 : ('ifconfig', 'edge_0-eth2', 'up')
+(aggr_1, edge_0) *** aggr_1 : ('ip link add name aggr_1-eth4 address ce:5a:7f:68:fb:3f type veth peer name edge_1-eth2 address 56:32:96:ef:49:2e netns 4212',)
+
+added intf aggr_1-eth4 (4) to node aggr_1
+*** aggr_1 : ('ifconfig', 'aggr_1-eth4', 'up')
+
+added intf edge_1-eth2 (2) to node edge_1
+*** edge_1 : ('ifconfig', 'edge_1-eth2', 'up')
+(aggr_1, edge_1) *** aggr_2 : ('ip link add name aggr_2-eth3 address 96:52:94:98:f5:97 type veth peer name edge_2-eth1 address b2:f5:ea:b5:f8:34 netns 4215',)
+
+added intf aggr_2-eth3 (3) to node aggr_2
+*** aggr_2 : ('ifconfig', 'aggr_2-eth3', 'up')
+
+added intf edge_2-eth1 (1) to node edge_2
+*** edge_2 : ('ifconfig', 'edge_2-eth1', 'up')
+(aggr_2, edge_2) *** aggr_2 : ('ip link add name aggr_2-eth4 address ca:73:1d:1d:cf:7d type veth peer name edge_3-eth1 address be:5a:ea:5b:4d:d4 netns 4218',)
+
+added intf aggr_2-eth4 (4) to node aggr_2
+*** aggr_2 : ('ifconfig', 'aggr_2-eth4', 'up')
+
+added intf edge_3-eth1 (1) to node edge_3
+*** edge_3 : ('ifconfig', 'edge_3-eth1', 'up')
+(aggr_2, edge_3) *** aggr_3 : ('ip link add name aggr_3-eth3 address ca:24:53:ed:1f:25 type veth peer name edge_2-eth2 address a2:47:41:b1:b1:9a netns 4215',)
+
+added intf aggr_3-eth3 (3) to node aggr_3
+*** aggr_3 : ('ifconfig', 'aggr_3-eth3', 'up')
+
+added intf edge_2-eth2 (2) to node edge_2
+*** edge_2 : ('ifconfig', 'edge_2-eth2', 'up')
+(aggr_3, edge_2) *** aggr_3 : ('ip link add name aggr_3-eth4 address 0e:a0:3c:d9:1a:c7 type veth peer name edge_3-eth2 address fe:da:df:5e:49:35 netns 4218',)
+
+added intf aggr_3-eth4 (4) to node aggr_3
+*** aggr_3 : ('ifconfig', 'aggr_3-eth4', 'up')
+
+added intf edge_3-eth2 (2) to node edge_3
+*** edge_3 : ('ifconfig', 'edge_3-eth2', 'up')
+(aggr_3, edge_3) *** aggr_4 : ('ip link add name aggr_4-eth3 address 2a:30:9f:20:41:4b type veth peer name edge_4-eth1 address b6:cd:03:f1:51:11 netns 4221',)
+
+added intf aggr_4-eth3 (3) to node aggr_4
+*** aggr_4 : ('ifconfig', 'aggr_4-eth3', 'up')
+
+added intf edge_4-eth1 (1) to node edge_4
+*** edge_4 : ('ifconfig', 'edge_4-eth1', 'up')
+(aggr_4, edge_4) *** aggr_4 : ('ip link add name aggr_4-eth4 address 3e:58:ea:76:c6:42 type veth peer name edge_5-eth1 address 3e:2d:8d:de:a5:45 netns 4224',)
+
+added intf aggr_4-eth4 (4) to node aggr_4
+*** aggr_4 : ('ifconfig', 'aggr_4-eth4', 'up')
+
+added intf edge_5-eth1 (1) to node edge_5
+*** edge_5 : ('ifconfig', 'edge_5-eth1', 'up')
+(aggr_4, edge_5) *** aggr_5 : ('ip link add name aggr_5-eth3 address 1e:d4:85:ad:3d:9f type veth peer name edge_4-eth2 address 4a:ce:d0:c5:38:44 netns 4221',)
+
+added intf aggr_5-eth3 (3) to node aggr_5
+*** aggr_5 : ('ifconfig', 'aggr_5-eth3', 'up')
+
+added intf edge_4-eth2 (2) to node edge_4
+*** edge_4 : ('ifconfig', 'edge_4-eth2', 'up')
+(aggr_5, edge_4) *** aggr_5 : ('ip link add name aggr_5-eth4 address 6e:88:76:87:5f:a2 type veth peer name edge_5-eth2 address fe:66:fc:bb:53:04 netns 4224',)
+
+added intf aggr_5-eth4 (4) to node aggr_5
+*** aggr_5 : ('ifconfig', 'aggr_5-eth4', 'up')
+
+added intf edge_5-eth2 (2) to node edge_5
+*** edge_5 : ('ifconfig', 'edge_5-eth2', 'up')
+(aggr_5, edge_5) *** aggr_6 : ('ip link add name aggr_6-eth3 address fe:0c:ff:f5:0c:20 type veth peer name edge_6-eth1 address 46:0a:a9:fd:18:c1 netns 4227',)
+
+added intf aggr_6-eth3 (3) to node aggr_6
+*** aggr_6 : ('ifconfig', 'aggr_6-eth3', 'up')
+
+added intf edge_6-eth1 (1) to node edge_6
+*** edge_6 : ('ifconfig', 'edge_6-eth1', 'up')
+(aggr_6, edge_6) *** aggr_6 : ('ip link add name aggr_6-eth4 address 0a:9c:4c:6b:a0:86 type veth peer name edge_7-eth1 address 56:b5:07:ad:04:81 netns 4230',)
+
+added intf aggr_6-eth4 (4) to node aggr_6
+*** aggr_6 : ('ifconfig', 'aggr_6-eth4', 'up')
+
+added intf edge_7-eth1 (1) to node edge_7
+*** edge_7 : ('ifconfig', 'edge_7-eth1', 'up')
+(aggr_6, edge_7) *** aggr_7 : ('ip link add name aggr_7-eth3 address 22:cb:c6:6e:87:98 type veth peer name edge_6-eth2 address 5e:93:2a:94:05:c0 netns 4227',)
+
+added intf aggr_7-eth3 (3) to node aggr_7
+*** aggr_7 : ('ifconfig', 'aggr_7-eth3', 'up')
+
+added intf edge_6-eth2 (2) to node edge_6
+*** edge_6 : ('ifconfig', 'edge_6-eth2', 'up')
+(aggr_7, edge_6) *** aggr_7 : ('ip link add name aggr_7-eth4 address b2:ce:70:5d:81:3d type veth peer name edge_7-eth2 address 46:ef:3a:0b:7a:53 netns 4230',)
+
+added intf aggr_7-eth4 (4) to node aggr_7
+*** aggr_7 : ('ifconfig', 'aggr_7-eth4', 'up')
+
+added intf edge_7-eth2 (2) to node edge_7
+*** edge_7 : ('ifconfig', 'edge_7-eth2', 'up')
+(aggr_7, edge_7) *** core_0 : ('ip link add name core_0-eth1 address 42:c4:4f:98:b8:ae type veth peer name aggr_0-eth1 address 8a:94:e7:e1:e9:0a netns 4173',)
+
+added intf core_0-eth1 (1) to node core_0
+*** core_0 : ('ifconfig', 'core_0-eth1', 'up')
+
+added intf aggr_0-eth1 (1) to node aggr_0
+*** aggr_0 : ('ifconfig', 'aggr_0-eth1', 'up')
+(core_0, aggr_0) *** core_0 : ('ip link add name core_0-eth2 address 3e:a4:ab:b9:e8:8e type veth peer name aggr_2-eth1 address b6:f5:a4:9a:10:07 netns 4179',)
+
+added intf core_0-eth2 (2) to node core_0
+*** core_0 : ('ifconfig', 'core_0-eth2', 'up')
+
+added intf aggr_2-eth1 (1) to node aggr_2
+*** aggr_2 : ('ifconfig', 'aggr_2-eth1', 'up')
+(core_0, aggr_2) *** core_0 : ('ip link add name core_0-eth3 address 5e:a2:c9:02:a5:e7 type veth peer name aggr_4-eth1 address c6:90:12:66:13:dc netns 4185',)
+
+added intf core_0-eth3 (3) to node core_0
+*** core_0 : ('ifconfig', 'core_0-eth3', 'up')
+
+added intf aggr_4-eth1 (1) to node aggr_4
+*** aggr_4 : ('ifconfig', 'aggr_4-eth1', 'up')
+(core_0, aggr_4) *** core_0 : ('ip link add name core_0-eth4 address c6:e3:70:b8:4b:91 type veth peer name aggr_6-eth1 address 5e:fc:66:5e:42:91 netns 4191',)
+
+added intf core_0-eth4 (4) to node core_0
+*** core_0 : ('ifconfig', 'core_0-eth4', 'up')
+
+added intf aggr_6-eth1 (1) to node aggr_6
+*** aggr_6 : ('ifconfig', 'aggr_6-eth1', 'up')
+(core_0, aggr_6) *** core_1 : ('ip link add name core_1-eth1 address 1e:27:7e:4c:8d:f1 type veth peer name aggr_0-eth2 address da:a4:64:eb:88:45 netns 4173',)
+
+added intf core_1-eth1 (1) to node core_1
+*** core_1 : ('ifconfig', 'core_1-eth1', 'up')
+
+added intf aggr_0-eth2 (2) to node aggr_0
+*** aggr_0 : ('ifconfig', 'aggr_0-eth2', 'up')
+(core_1, aggr_0) *** core_1 : ('ip link add name core_1-eth2 address 42:b4:ad:db:2a:62 type veth peer name aggr_2-eth2 address 92:f6:e6:98:3a:41 netns 4179',)
+
+added intf core_1-eth2 (2) to node core_1
+*** core_1 : ('ifconfig', 'core_1-eth2', 'up')
+
+added intf aggr_2-eth2 (2) to node aggr_2
+*** aggr_2 : ('ifconfig', 'aggr_2-eth2', 'up')
+(core_1, aggr_2) *** core_1 : ('ip link add name core_1-eth3 address 96:77:28:c4:07:9c type veth peer name aggr_4-eth2 address a2:b5:fd:0c:96:0e netns 4185',)
+
+added intf core_1-eth3 (3) to node core_1
+*** core_1 : ('ifconfig', 'core_1-eth3', 'up')
+
+added intf aggr_4-eth2 (2) to node aggr_4
+*** aggr_4 : ('ifconfig', 'aggr_4-eth2', 'up')
+(core_1, aggr_4) *** core_1 : ('ip link add name core_1-eth4 address 92:01:e1:6e:b7:0f type veth peer name aggr_6-eth2 address 26:f8:50:07:f3:98 netns 4191',)
+
+added intf core_1-eth4 (4) to node core_1
+*** core_1 : ('ifconfig', 'core_1-eth4', 'up')
+
+added intf aggr_6-eth2 (2) to node aggr_6
+*** aggr_6 : ('ifconfig', 'aggr_6-eth2', 'up')
+(core_1, aggr_6) *** core_2 : ('ip link add name core_2-eth1 address b2:ba:c2:57:1d:b5 type veth peer name aggr_1-eth1 address 72:61:1a:97:2b:54 netns 4176',)
+
+added intf core_2-eth1 (1) to node core_2
+*** core_2 : ('ifconfig', 'core_2-eth1', 'up')
+
+added intf aggr_1-eth1 (1) to node aggr_1
+*** aggr_1 : ('ifconfig', 'aggr_1-eth1', 'up')
+(core_2, aggr_1) *** core_2 : ('ip link add name core_2-eth2 address 22:57:c5:59:75:78 type veth peer name aggr_3-eth1 address 6e:de:65:89:62:45 netns 4182',)
+
+added intf core_2-eth2 (2) to node core_2
+*** core_2 : ('ifconfig', 'core_2-eth2', 'up')
+
+added intf aggr_3-eth1 (1) to node aggr_3
+*** aggr_3 : ('ifconfig', 'aggr_3-eth1', 'up')
+(core_2, aggr_3) *** core_2 : ('ip link add name core_2-eth3 address 6e:c8:37:25:a2:ec type veth peer name aggr_5-eth1 address d2:c3:15:29:a3:4e netns 4188',)
+
+added intf core_2-eth3 (3) to node core_2
+*** core_2 : ('ifconfig', 'core_2-eth3', 'up')
+
+added intf aggr_5-eth1 (1) to node aggr_5
+*** aggr_5 : ('ifconfig', 'aggr_5-eth1', 'up')
+(core_2, aggr_5) *** core_2 : ('ip link add name core_2-eth4 address d6:b3:2b:ab:5f:2f type veth peer name aggr_7-eth1 address 96:9c:ee:a9:09:a8 netns 4194',)
+
+added intf core_2-eth4 (4) to node core_2
+*** core_2 : ('ifconfig', 'core_2-eth4', 'up')
+
+added intf aggr_7-eth1 (1) to node aggr_7
+*** aggr_7 : ('ifconfig', 'aggr_7-eth1', 'up')
+(core_2, aggr_7) *** core_3 : ('ip link add name core_3-eth1 address 76:fa:74:85:77:08 type veth peer name aggr_1-eth2 address 3e:57:f5:2c:f5:8e netns 4176',)
+
+added intf core_3-eth1 (1) to node core_3
+*** core_3 : ('ifconfig', 'core_3-eth1', 'up')
+
+added intf aggr_1-eth2 (2) to node aggr_1
+*** aggr_1 : ('ifconfig', 'aggr_1-eth2', 'up')
+(core_3, aggr_1) *** core_3 : ('ip link add name core_3-eth2 address fa:5f:14:e2:b3:d9 type veth peer name aggr_3-eth2 address 3e:b7:1e:83:5c:45 netns 4182',)
+
+added intf core_3-eth2 (2) to node core_3
+*** core_3 : ('ifconfig', 'core_3-eth2', 'up')
+
+added intf aggr_3-eth2 (2) to node aggr_3
+*** aggr_3 : ('ifconfig', 'aggr_3-eth2', 'up')
+(core_3, aggr_3) *** core_3 : ('ip link add name core_3-eth3 address 1e:38:e2:fe:e7:eb type veth peer name aggr_5-eth2 address b2:20:6e:89:7b:58 netns 4188',)
+
+added intf core_3-eth3 (3) to node core_3
+*** core_3 : ('ifconfig', 'core_3-eth3', 'up')
+
+added intf aggr_5-eth2 (2) to node aggr_5
+*** aggr_5 : ('ifconfig', 'aggr_5-eth2', 'up')
+(core_3, aggr_5) *** core_3 : ('ip link add name core_3-eth4 address 52:e7:4d:3b:1f:c8 type veth peer name aggr_7-eth2 address 22:66:5f:58:45:e1 netns 4194',)
+
+added intf core_3-eth4 (4) to node core_3
+*** core_3 : ('ifconfig', 'core_3-eth4', 'up')
+
+added intf aggr_7-eth2 (2) to node aggr_7
+*** aggr_7 : ('ifconfig', 'aggr_7-eth2', 'up')
+(core_3, aggr_7) *** edge_0 : ('ip link add name edge_0-eth3 address fa:b9:64:88:80:88 type veth peer name host_0-eth0 address 12:8a:49:5f:11:b1 netns 4138',)
+
+added intf edge_0-eth3 (3) to node edge_0
+*** edge_0 : ('ifconfig', 'edge_0-eth3', 'up')
+
+added intf host_0-eth0 (0) to node host_0
+moving host_0-eth0 into namespace for host_0 
+*** host_0 : ('ifconfig', 'host_0-eth0', 'up')
+(edge_0, host_0) *** edge_0 : ('ip link add name edge_0-eth4 address 7a:0d:90:bc:55:b7 type veth peer name host_1-eth0 address 8a:83:1a:5e:95:1e netns 4140',)
+
+added intf edge_0-eth4 (4) to node edge_0
+*** edge_0 : ('ifconfig', 'edge_0-eth4', 'up')
+
+added intf host_1-eth0 (0) to node host_1
+moving host_1-eth0 into namespace for host_1 
+*** host_1 : ('ifconfig', 'host_1-eth0', 'up')
+(edge_0, host_1) *** edge_1 : ('ip link add name edge_1-eth3 address 62:5a:46:34:94:18 type veth peer name host_2-eth0 address 3e:c6:fe:e0:47:36 netns 4142',)
+
+added intf edge_1-eth3 (3) to node edge_1
+*** edge_1 : ('ifconfig', 'edge_1-eth3', 'up')
+
+added intf host_2-eth0 (0) to node host_2
+moving host_2-eth0 into namespace for host_2 
+*** host_2 : ('ifconfig', 'host_2-eth0', 'up')
+(edge_1, host_2) *** edge_1 : ('ip link add name edge_1-eth4 address fe:1a:ce:8b:25:80 type veth peer name host_3-eth0 address 6a:5c:98:1e:47:63 netns 4144',)
+
+added intf edge_1-eth4 (4) to node edge_1
+*** edge_1 : ('ifconfig', 'edge_1-eth4', 'up')
+
+added intf host_3-eth0 (0) to node host_3
+moving host_3-eth0 into namespace for host_3 
+*** host_3 : ('ifconfig', 'host_3-eth0', 'up')
+(edge_1, host_3) *** edge_2 : ('ip link add name edge_2-eth3 address de:c0:fb:2b:0b:85 type veth peer name host_4-eth0 address 2e:89:af:ef:9b:bc netns 4146',)
+
+added intf edge_2-eth3 (3) to node edge_2
+*** edge_2 : ('ifconfig', 'edge_2-eth3', 'up')
+
+added intf host_4-eth0 (0) to node host_4
+moving host_4-eth0 into namespace for host_4 
+*** host_4 : ('ifconfig', 'host_4-eth0', 'up')
+(edge_2, host_4) *** edge_2 : ('ip link add name edge_2-eth4 address b2:bc:91:4a:68:c8 type veth peer name host_5-eth0 address 6e:cf:23:68:2e:34 netns 4148',)
+
+added intf edge_2-eth4 (4) to node edge_2
+*** edge_2 : ('ifconfig', 'edge_2-eth4', 'up')
+
+added intf host_5-eth0 (0) to node host_5
+moving host_5-eth0 into namespace for host_5 
+*** host_5 : ('ifconfig', 'host_5-eth0', 'up')
+(edge_2, host_5) *** edge_3 : ('ip link add name edge_3-eth3 address b2:6d:11:2b:2d:bd type veth peer name host_6-eth0 address 62:b9:3d:5e:20:92 netns 4150',)
+
+added intf edge_3-eth3 (3) to node edge_3
+*** edge_3 : ('ifconfig', 'edge_3-eth3', 'up')
+
+added intf host_6-eth0 (0) to node host_6
+moving host_6-eth0 into namespace for host_6 
+*** host_6 : ('ifconfig', 'host_6-eth0', 'up')
+(edge_3, host_6) *** edge_3 : ('ip link add name edge_3-eth4 address c2:b4:63:57:b8:f0 type veth peer name host_7-eth0 address d2:c6:f7:9e:1b:d9 netns 4152',)
+
+added intf edge_3-eth4 (4) to node edge_3
+*** edge_3 : ('ifconfig', 'edge_3-eth4', 'up')
+
+added intf host_7-eth0 (0) to node host_7
+moving host_7-eth0 into namespace for host_7 
+*** host_7 : ('ifconfig', 'host_7-eth0', 'up')
+(edge_3, host_7) *** edge_4 : ('ip link add name edge_4-eth3 address 02:e8:94:03:22:9a type veth peer name host_8-eth0 address 92:d4:40:c8:af:a5 netns 4154',)
+
+added intf edge_4-eth3 (3) to node edge_4
+*** edge_4 : ('ifconfig', 'edge_4-eth3', 'up')
+
+added intf host_8-eth0 (0) to node host_8
+moving host_8-eth0 into namespace for host_8 
+*** host_8 : ('ifconfig', 'host_8-eth0', 'up')
+(edge_4, host_8) *** edge_4 : ('ip link add name edge_4-eth4 address 06:57:ac:28:47:63 type veth peer name host_9-eth0 address 1a:0d:eb:96:ea:9f netns 4156',)
+
+added intf edge_4-eth4 (4) to node edge_4
+*** edge_4 : ('ifconfig', 'edge_4-eth4', 'up')
+
+added intf host_9-eth0 (0) to node host_9
+moving host_9-eth0 into namespace for host_9 
+*** host_9 : ('ifconfig', 'host_9-eth0', 'up')
+(edge_4, host_9) *** edge_5 : ('ip link add name edge_5-eth3 address a6:93:67:ab:db:58 type veth peer name host_10-eth0 address da:8a:e6:b9:c9:fe netns 4158',)
+
+added intf edge_5-eth3 (3) to node edge_5
+*** edge_5 : ('ifconfig', 'edge_5-eth3', 'up')
+
+added intf host_10-eth0 (0) to node host_10
+moving host_10-eth0 into namespace for host_10 
+*** host_10 : ('ifconfig', 'host_10-eth0', 'up')
+(edge_5, host_10) *** edge_5 : ('ip link add name edge_5-eth4 address 5e:95:48:f3:c1:42 type veth peer name host_11-eth0 address fa:7b:70:39:ee:fc netns 4160',)
+
+added intf edge_5-eth4 (4) to node edge_5
+*** edge_5 : ('ifconfig', 'edge_5-eth4', 'up')
+
+added intf host_11-eth0 (0) to node host_11
+moving host_11-eth0 into namespace for host_11 
+*** host_11 : ('ifconfig', 'host_11-eth0', 'up')
+(edge_5, host_11) *** edge_6 : ('ip link add name edge_6-eth3 address 26:86:bd:e3:7a:71 type veth peer name host_12-eth0 address 72:17:43:c6:4d:05 netns 4162',)
+
+added intf edge_6-eth3 (3) to node edge_6
+*** edge_6 : ('ifconfig', 'edge_6-eth3', 'up')
+
+added intf host_12-eth0 (0) to node host_12
+moving host_12-eth0 into namespace for host_12 
+*** host_12 : ('ifconfig', 'host_12-eth0', 'up')
+(edge_6, host_12) *** edge_6 : ('ip link add name edge_6-eth4 address 72:64:68:40:bd:2b type veth peer name host_13-eth0 address 96:99:57:c0:1a:a6 netns 4164',)
+
+added intf edge_6-eth4 (4) to node edge_6
+*** edge_6 : ('ifconfig', 'edge_6-eth4', 'up')
+
+added intf host_13-eth0 (0) to node host_13
+moving host_13-eth0 into namespace for host_13 
+*** host_13 : ('ifconfig', 'host_13-eth0', 'up')
+(edge_6, host_13) *** edge_7 : ('ip link add name edge_7-eth3 address 56:09:f9:98:07:54 type veth peer name host_14-eth0 address aa:0a:4a:ff:f3:9b netns 4166',)
+
+added intf edge_7-eth3 (3) to node edge_7
+*** edge_7 : ('ifconfig', 'edge_7-eth3', 'up')
+
+added intf host_14-eth0 (0) to node host_14
+moving host_14-eth0 into namespace for host_14 
+*** host_14 : ('ifconfig', 'host_14-eth0', 'up')
+(edge_7, host_14) *** edge_7 : ('ip link add name edge_7-eth4 address fa:43:52:07:84:d2 type veth peer name host_15-eth0 address 36:b1:bc:b0:a8:15 netns 4168',)
+
+added intf edge_7-eth4 (4) to node edge_7
+*** edge_7 : ('ifconfig', 'edge_7-eth4', 'up')
+
+added intf host_15-eth0 (0) to node host_15
+moving host_15-eth0 into namespace for host_15 
+*** host_15 : ('ifconfig', 'host_15-eth0', 'up')
+(edge_7, host_15) 
+*** Configuring hosts
+host_0 *** host_0 : ('ifconfig', 'host_0-eth0', '10.0.0.1/8', 'up')
+*** host_0 : ('ifconfig lo up',)
+host_1 *** host_1 : ('ifconfig', 'host_1-eth0', '10.0.0.2/8', 'up')
+*** host_1 : ('ifconfig lo up',)
+host_2 *** host_2 : ('ifconfig', 'host_2-eth0', '10.0.0.3/8', 'up')
+*** host_2 : ('ifconfig lo up',)
+host_3 *** host_3 : ('ifconfig', 'host_3-eth0', '10.0.0.4/8', 'up')
+*** host_3 : ('ifconfig lo up',)
+host_4 *** host_4 : ('ifconfig', 'host_4-eth0', '10.0.0.5/8', 'up')
+*** host_4 : ('ifconfig lo up',)
+host_5 *** host_5 : ('ifconfig', 'host_5-eth0', '10.0.0.6/8', 'up')
+*** host_5 : ('ifconfig lo up',)
+host_6 *** host_6 : ('ifconfig', 'host_6-eth0', '10.0.0.7/8', 'up')
+*** host_6 : ('ifconfig lo up',)
+host_7 *** host_7 : ('ifconfig', 'host_7-eth0', '10.0.0.8/8', 'up')
+*** host_7 : ('ifconfig lo up',)
+host_8 *** host_8 : ('ifconfig', 'host_8-eth0', '10.0.0.9/8', 'up')
+*** host_8 : ('ifconfig lo up',)
+host_9 *** host_9 : ('ifconfig', 'host_9-eth0', '10.0.0.10/8', 'up')
+*** host_9 : ('ifconfig lo up',)
+host_10 *** host_10 : ('ifconfig', 'host_10-eth0', '10.0.0.11/8', 'up')
+*** host_10 : ('ifconfig lo up',)
+host_11 *** host_11 : ('ifconfig', 'host_11-eth0', '10.0.0.12/8', 'up')
+*** host_11 : ('ifconfig lo up',)
+host_12 *** host_12 : ('ifconfig', 'host_12-eth0', '10.0.0.13/8', 'up')
+*** host_12 : ('ifconfig lo up',)
+host_13 *** host_13 : ('ifconfig', 'host_13-eth0', '10.0.0.14/8', 'up')
+*** host_13 : ('ifconfig lo up',)
+host_14 *** host_14 : ('ifconfig', 'host_14-eth0', '10.0.0.15/8', 'up')
+*** host_14 : ('ifconfig lo up',)
+host_15 *** host_15 : ('ifconfig', 'host_15-eth0', '10.0.0.16/8', 'up')
+*** host_15 : ('ifconfig lo up',)
+
+*** Starting controller
+c0 *** errRun: ['which', 'controller'] 
+/usr/local/bin/controller
+  0*** c0 : ('controller -v ptcp:6653 1>/tmp/c0.log 2>/tmp/c0.log &',)
+
+*** Starting 20 switches
+aggr_0 aggr_1 aggr_2 aggr_3 aggr_4 aggr_5 aggr_6 aggr_7 core_0 core_1 core_2 core_3 edge_0 edge_1 edge_2 edge_3 edge_4 edge_5 edge_6 edge_7 ...*** errRun: ovs-vsctl -- --id=@aggr_0c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@aggr_0-listen create Controller target=\"ptcp:6654\" max_backoff=1000 -- --if-exists del-br aggr_0 -- add-br aggr_0 -- set bridge aggr_0 controller=[@aggr_0c0,@aggr_0-listen] other_config:datapath-id=0000000000000000 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=aggr_0 -- add-port aggr_0 aggr_0-eth1 -- set Interface aggr_0-eth1 ofport_request=1 -- add-port aggr_0 aggr_0-eth2 -- set Interface aggr_0-eth2 ofport_request=2 -- add-port aggr_0 aggr_0-eth3 -- set Interface aggr_0-eth3 ofport_request=3 -- add-port aggr_0 aggr_0-eth4 -- set Interface aggr_0-eth4 ofport_request=4 -- --id=@aggr_1c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@aggr_1-listen create Controller target=\"ptcp:6655\" max_backoff=1000 -- --if-exists del-br aggr_1 -- add-br aggr_1 -- set bridge aggr_1 controller=[@aggr_1c0,@aggr_1-listen] other_config:datapath-id=0000000000000001 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=aggr_1 -- add-port aggr_1 aggr_1-eth1 -- set Interface aggr_1-eth1 ofport_request=1 -- add-port aggr_1 aggr_1-eth2 -- set Interface aggr_1-eth2 ofport_request=2 -- add-port aggr_1 aggr_1-eth3 -- set Interface aggr_1-eth3 ofport_request=3 -- add-port aggr_1 aggr_1-eth4 -- set Interface aggr_1-eth4 ofport_request=4 -- --id=@aggr_2c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@aggr_2-listen create Controller target=\"ptcp:6656\" max_backoff=1000 -- --if-exists del-br aggr_2 -- add-br aggr_2 -- set bridge aggr_2 controller=[@aggr_2c0,@aggr_2-listen] other_config:datapath-id=0000000000000002 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=aggr_2 -- add-port aggr_2 aggr_2-eth1 -- set Interface aggr_2-eth1 ofport_request=1 -- add-port aggr_2 aggr_2-eth2 -- set Interface aggr_2-eth2 ofport_request=2 -- add-port aggr_2 aggr_2-eth3 -- set Interface aggr_2-eth3 ofport_request=3 -- add-port aggr_2 aggr_2-eth4 -- set Interface aggr_2-eth4 ofport_request=4 -- --id=@aggr_3c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@aggr_3-listen create Controller target=\"ptcp:6657\" max_backoff=1000 -- --if-exists del-br aggr_3 -- add-br aggr_3 -- set bridge aggr_3 controller=[@aggr_3c0,@aggr_3-listen] other_config:datapath-id=0000000000000003 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=aggr_3 -- add-port aggr_3 aggr_3-eth1 -- set Interface aggr_3-eth1 ofport_request=1 -- add-port aggr_3 aggr_3-eth2 -- set Interface aggr_3-eth2 ofport_request=2 -- add-port aggr_3 aggr_3-eth3 -- set Interface aggr_3-eth3 ofport_request=3 -- add-port aggr_3 aggr_3-eth4 -- set Interface aggr_3-eth4 ofport_request=4 -- --id=@aggr_4c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@aggr_4-listen create Controller target=\"ptcp:6658\" max_backoff=1000 -- --if-exists del-br aggr_4 -- add-br aggr_4 -- set bridge aggr_4 controller=[@aggr_4c0,@aggr_4-listen] other_config:datapath-id=0000000000000004 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=aggr_4 -- add-port aggr_4 aggr_4-eth1 -- set Interface aggr_4-eth1 ofport_request=1 -- add-port aggr_4 aggr_4-eth2 -- set Interface aggr_4-eth2 ofport_request=2 -- add-port aggr_4 aggr_4-eth3 -- set Interface aggr_4-eth3 ofport_request=3 -- add-port aggr_4 aggr_4-eth4 -- set Interface aggr_4-eth4 ofport_request=4 -- --id=@aggr_5c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@aggr_5-listen create Controller target=\"ptcp:6659\" max_backoff=1000 -- --if-exists del-br aggr_5 -- add-br aggr_5 -- set bridge aggr_5 controller=[@aggr_5c0,@aggr_5-listen] other_config:datapath-id=0000000000000005 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=aggr_5 -- add-port aggr_5 aggr_5-eth1 -- set Interface aggr_5-eth1 ofport_request=1 -- add-port aggr_5 aggr_5-eth2 -- set Interface aggr_5-eth2 ofport_request=2 -- add-port aggr_5 aggr_5-eth3 -- set Interface aggr_5-eth3 ofport_request=3 -- add-port aggr_5 aggr_5-eth4 -- set Interface aggr_5-eth4 ofport_request=4 -- --id=@aggr_6c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@aggr_6-listen create Controller target=\"ptcp:6660\" max_backoff=1000 -- --if-exists del-br aggr_6 -- add-br aggr_6 -- set bridge aggr_6 controller=[@aggr_6c0,@aggr_6-listen] other_config:datapath-id=0000000000000006 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=aggr_6 -- add-port aggr_6 aggr_6-eth1 -- set Interface aggr_6-eth1 ofport_request=1 -- add-port aggr_6 aggr_6-eth2 -- set Interface aggr_6-eth2 ofport_request=2 -- add-port aggr_6 aggr_6-eth3 -- set Interface aggr_6-eth3 ofport_request=3 -- add-port aggr_6 aggr_6-eth4 -- set Interface aggr_6-eth4 ofport_request=4 -- --id=@aggr_7c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@aggr_7-listen create Controller target=\"ptcp:6661\" max_backoff=1000 -- --if-exists del-br aggr_7 -- add-br aggr_7 -- set bridge aggr_7 controller=[@aggr_7c0,@aggr_7-listen] other_config:datapath-id=0000000000000007 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=aggr_7 -- add-port aggr_7 aggr_7-eth1 -- set Interface aggr_7-eth1 ofport_request=1 -- add-port aggr_7 aggr_7-eth2 -- set Interface aggr_7-eth2 ofport_request=2 -- add-port aggr_7 aggr_7-eth3 -- set Interface aggr_7-eth3 ofport_request=3 -- add-port aggr_7 aggr_7-eth4 -- set Interface aggr_7-eth4 ofport_request=4 -- --id=@core_0c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@core_0-listen create Controller target=\"ptcp:6662\" max_backoff=1000 -- --if-exists del-br core_0 -- add-br core_0 -- set bridge core_0 controller=[@core_0c0,@core_0-listen] other_config:datapath-id=0000000000000000 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=core_0 -- add-port core_0 core_0-eth1 -- set Interface core_0-eth1 ofport_request=1 -- add-port core_0 core_0-eth2 -- set Interface core_0-eth2 ofport_request=2 -- add-port core_0 core_0-eth3 -- set Interface core_0-eth3 ofport_request=3 -- add-port core_0 core_0-eth4 -- set Interface core_0-eth4 ofport_request=4 -- --id=@core_1c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@core_1-listen create Controller target=\"ptcp:6663\" max_backoff=1000 -- --if-exists del-br core_1 -- add-br core_1 -- set bridge core_1 controller=[@core_1c0,@core_1-listen] other_config:datapath-id=0000000000000001 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=core_1 -- add-port core_1 core_1-eth1 -- set Interface core_1-eth1 ofport_request=1 -- add-port core_1 core_1-eth2 -- set Interface core_1-eth2 ofport_request=2 -- add-port core_1 core_1-eth3 -- set Interface core_1-eth3 ofport_request=3 -- add-port core_1 core_1-eth4 -- set Interface core_1-eth4 ofport_request=4 -- --id=@core_2c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@core_2-listen create Controller target=\"ptcp:6664\" max_backoff=1000 -- --if-exists del-br core_2 -- add-br core_2 -- set bridge core_2 controller=[@core_2c0,@core_2-listen] other_config:datapath-id=0000000000000002 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=core_2 -- add-port core_2 core_2-eth1 -- set Interface core_2-eth1 ofport_request=1 -- add-port core_2 core_2-eth2 -- set Interface core_2-eth2 ofport_request=2 -- add-port core_2 core_2-eth3 -- set Interface core_2-eth3 ofport_request=3 -- add-port core_2 core_2-eth4 -- set Interface core_2-eth4 ofport_request=4 -- --id=@core_3c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@core_3-listen create Controller target=\"ptcp:6665\" max_backoff=1000 -- --if-exists del-br core_3 -- add-br core_3 -- set bridge core_3 controller=[@core_3c0,@core_3-listen] other_config:datapath-id=0000000000000003 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=core_3 -- add-port core_3 core_3-eth1 -- set Interface core_3-eth1 ofport_request=1 -- add-port core_3 core_3-eth2 -- set Interface core_3-eth2 ofport_request=2 -- add-port core_3 core_3-eth3 -- set Interface core_3-eth3 ofport_request=3 -- add-port core_3 core_3-eth4 -- set Interface core_3-eth4 ofport_request=4 -- --id=@edge_0c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@edge_0-listen create Controller target=\"ptcp:6666\" max_backoff=1000 -- --if-exists del-br edge_0 -- add-br edge_0 -- set bridge edge_0 controller=[@edge_0c0,@edge_0-listen] other_config:datapath-id=0000000000000000 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=edge_0 -- add-port edge_0 edge_0-eth1 -- set Interface edge_0-eth1 ofport_request=1 -- add-port edge_0 edge_0-eth2 -- set Interface edge_0-eth2 ofport_request=2 -- add-port edge_0 edge_0-eth3 -- set Interface edge_0-eth3 ofport_request=3 -- add-port edge_0 edge_0-eth4 -- set Interface edge_0-eth4 ofport_request=4 -- --id=@edge_1c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@edge_1-listen create Controller target=\"ptcp:6667\" max_backoff=1000 -- --if-exists del-br edge_1 -- add-br edge_1 -- set bridge edge_1 controller=[@edge_1c0,@edge_1-listen] other_config:datapath-id=0000000000000001 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=edge_1 -- add-port edge_1 edge_1-eth1 -- set Interface edge_1-eth1 ofport_request=1 -- add-port edge_1 edge_1-eth2 -- set Interface edge_1-eth2 ofport_request=2 -- add-port edge_1 edge_1-eth3 -- set Interface edge_1-eth3 ofport_request=3 -- add-port edge_1 edge_1-eth4 -- set Interface edge_1-eth4 ofport_request=4 -- --id=@edge_2c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@edge_2-listen create Controller target=\"ptcp:6668\" max_backoff=1000 -- --if-exists del-br edge_2 -- add-br edge_2 -- set bridge edge_2 controller=[@edge_2c0,@edge_2-listen] other_config:datapath-id=0000000000000002 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=edge_2 -- add-port edge_2 edge_2-eth1 -- set Interface edge_2-eth1 ofport_request=1 -- add-port edge_2 edge_2-eth2 -- set Interface edge_2-eth2 ofport_request=2 -- add-port edge_2 edge_2-eth3 -- set Interface edge_2-eth3 ofport_request=3 -- add-port edge_2 edge_2-eth4 -- set Interface edge_2-eth4 ofport_request=4 -- --id=@edge_3c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@edge_3-listen create Controller target=\"ptcp:6669\" max_backoff=1000 -- --if-exists del-br edge_3 -- add-br edge_3 -- set bridge edge_3 controller=[@edge_3c0,@edge_3-listen] other_config:datapath-id=0000000000000003 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=edge_3 -- add-port edge_3 edge_3-eth1 -- set Interface edge_3-eth1 ofport_request=1 -- add-port edge_3 edge_3-eth2 -- set Interface edge_3-eth2 ofport_request=2 -- add-port edge_3 edge_3-eth3 -- set Interface edge_3-eth3 ofport_request=3 -- add-port edge_3 edge_3-eth4 -- set Interface edge_3-eth4 ofport_request=4 -- --id=@edge_4c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@edge_4-listen create Controller target=\"ptcp:6670\" max_backoff=1000 -- --if-exists del-br edge_4 -- add-br edge_4 -- set bridge edge_4 controller=[@edge_4c0,@edge_4-listen] other_config:datapath-id=0000000000000004 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=edge_4 -- add-port edge_4 edge_4-eth1 -- set Interface edge_4-eth1 ofport_request=1 -- add-port edge_4 edge_4-eth2 -- set Interface edge_4-eth2 ofport_request=2 -- add-port edge_4 edge_4-eth3 -- set Interface edge_4-eth3 ofport_request=3 -- add-port edge_4 edge_4-eth4 -- set Interface edge_4-eth4 ofport_request=4 -- --id=@edge_5c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@edge_5-listen create Controller target=\"ptcp:6671\" max_backoff=1000 -- --if-exists del-br edge_5 -- add-br edge_5 -- set bridge edge_5 controller=[@edge_5c0,@edge_5-listen] other_config:datapath-id=0000000000000005 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=edge_5 -- add-port edge_5 edge_5-eth1 -- set Interface edge_5-eth1 ofport_request=1 -- add-port edge_5 edge_5-eth2 -- set Interface edge_5-eth2 ofport_request=2 -- add-port edge_5 edge_5-eth3 -- set Interface edge_5-eth3 ofport_request=3 -- add-port edge_5 edge_5-eth4 -- set Interface edge_5-eth4 ofport_request=4 -- --id=@edge_6c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@edge_6-listen create Controller target=\"ptcp:6672\" max_backoff=1000 -- --if-exists del-br edge_6 -- add-br edge_6 -- set bridge edge_6 controller=[@edge_6c0,@edge_6-listen] other_config:datapath-id=0000000000000006 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=edge_6 -- add-port edge_6 edge_6-eth1 -- set Interface edge_6-eth1 ofport_request=1 -- add-port edge_6 edge_6-eth2 -- set Interface edge_6-eth2 ofport_request=2 -- add-port edge_6 edge_6-eth3 -- set Interface edge_6-eth3 ofport_request=3 -- add-port edge_6 edge_6-eth4 -- set Interface edge_6-eth4 ofport_request=4 -- --id=@edge_7c0 create Controller target=\"tcp:127.0.0.1:6653\" max_backoff=1000 -- --id=@edge_7-listen create Controller target=\"ptcp:6673\" max_backoff=1000 -- --if-exists del-br edge_7 -- add-br edge_7 -- set bridge edge_7 controller=[@edge_7c0,@edge_7-listen] other_config:datapath-id=0000000000000007 fail_mode=secure other-config:disable-in-band=true other-config:dp-desc=edge_7 -- add-port edge_7 edge_7-eth1 -- set Interface edge_7-eth1 ofport_request=1 -- add-port edge_7 edge_7-eth2 -- set Interface edge_7-eth2 ofport_request=2 -- add-port edge_7 edge_7-eth3 -- set Interface edge_7-eth3 ofport_request=3 -- add-port edge_7 edge_7-eth4 -- set Interface edge_7-eth4 ofport_request=4 
+1a2c1c24-42a7-415a-a26d-6ac3e1a6958b
+447ef233-426e-4830-85d1-b3a42363cfeb
+667c43d0-134f-4b20-a321-212a4fde4a9f
+a5684460-da41-47a0-b91a-b29b7f66e1c5
+070be2be-116d-48f0-b4ef-fb1e3e6b6bb9
+a1dc6c6c-ae4b-47d5-a04f-030bb1ed1ece
+94f504a8-0546-4154-b94f-29b993a676e1
+4a5e5aa0-b6ad-47c8-b9c8-d61d985b0a4b
+e490bfed-3b2d-45ad-9384-44e7bf20a582
+29dcf03c-402a-4727-89a1-8e0375970234
+f4b5839d-365b-4278-aa3b-1282c1abcef8
+5945753d-c94b-4cd7-b58c-a68ef36a5670
+62c64b5a-4574-4c5e-873e-754c952fb302
+593f80a8-2ed0-4811-b749-3aeab956aab2
+9a85c607-4777-48e6-8500-fd39f8d1112d
+283f85be-04f2-4174-956e-e2747c586ce0
+a1ecde01-ba38-4791-9220-6aefc86706cc
+84ce9524-6a40-46f4-a0a8-10888424b077
+64c3f0f0-ed95-4f73-a8ba-2e0427852330
+ce484bab-477a-4375-865d-fec22df8da63
+e6f3fafb-27b4-43a8-b3bf-42f6cabf8390
+db1130eb-b43a-4ea3-abbb-6debc08bb950
+3d3c501f-ed0c-45de-a319-dd720c7a4995
+88d93fb9-5796-4a71-a8a3-494f0e148382
+1c0b53a7-bca0-400b-b048-6631f8a0ee9b
+e483d6e0-9d62-4858-911c-d59726acbf03
+7c08b427-110c-408a-97aa-9a7261f55735
+e2acd638-70d1-4e0c-b477-b  0
+*** Starting CLI:
+*** errRun: ['stty', 'echo', 'sane', 'intr', '^C'] 
+  0
+Interrupt
+*** errRun: ['stty', 'echo', 'sane', 'intr', '^C'] 
+  0
+*** Stopping 1 controllers
+c0 *** c0 : ('kill %controller',)
+*** c0 : ('wait %controller',)
+waiting for 4131 to terminate
+
+*** Stopping 48 links
+.*** aggr_0 : ('ip link del aggr_0-eth3',)
+*** edge_0 : ('ip link del edge_0-eth1',)
+Cannot find device "edge_0-eth1"
+.*** aggr_0 : ('ip link del aggr_0-eth4',)
+*** edge_1 : ('ip link del edge_1-eth1',)
+Cannot find device "edge_1-eth1"
+.*** aggr_1 : ('ip link del aggr_1-eth3',)
+*** edge_0 : ('ip link del edge_0-eth2',)
+Cannot find device "edge_0-eth2"
+.*** aggr_1 : ('ip link del aggr_1-eth4',)
+*** edge_1 : ('ip link del edge_1-eth2',)
+Cannot find device "edge_1-eth2"
+.*** aggr_2 : ('ip link del aggr_2-eth3',)
+*** edge_2 : ('ip link del edge_2-eth1',)
+Cannot find device "edge_2-eth1"
+.*** aggr_2 : ('ip link del aggr_2-eth4',)
+*** edge_3 : ('ip link del edge_3-eth1',)
+Cannot find device "edge_3-eth1"
+.*** aggr_3 : ('ip link del aggr_3-eth3',)
+*** edge_2 : ('ip link del edge_2-eth2',)
+Cannot find device "edge_2-eth2"
+.*** aggr_3 : ('ip link del aggr_3-eth4',)
+*** edge_3 : ('ip link del edge_3-eth2',)
+Cannot find device "edge_3-eth2"
+.*** aggr_4 : ('ip link del aggr_4-eth3',)
+*** edge_4 : ('ip link del edge_4-eth1',)
+Cannot find device "edge_4-eth1"
+.*** aggr_4 : ('ip link del aggr_4-eth4',)
+*** edge_5 : ('ip link del edge_5-eth1',)
+Cannot find device "edge_5-eth1"
+.*** aggr_5 : ('ip link del aggr_5-eth3',)
+*** edge_4 : ('ip link del edge_4-eth2',)
+Cannot find device "edge_4-eth2"
+.*** aggr_5 : ('ip link del aggr_5-eth4',)
+*** edge_5 : ('ip link del edge_5-eth2',)
+Cannot find device "edge_5-eth2"
+.*** aggr_6 : ('ip link del aggr_6-eth3',)
+*** edge_6 : ('ip link del edge_6-eth1',)
+Cannot find device "edge_6-eth1"
+.*** aggr_6 : ('ip link del aggr_6-eth4',)
+*** edge_7 : ('ip link del edge_7-eth1',)
+Cannot find device "edge_7-eth1"
+.*** aggr_7 : ('ip link del aggr_7-eth3',)
+*** edge_6 : ('ip link del edge_6-eth2',)
+Cannot find device "edge_6-eth2"
+.*** aggr_7 : ('ip link del aggr_7-eth4',)
+*** edge_7 : ('ip link del edge_7-eth2',)
+Cannot find device "edge_7-eth2"
+.*** core_0 : ('ip link del core_0-eth1',)
+*** aggr_0 : ('ip link del aggr_0-eth1',)
+Cannot find device "aggr_0-eth1"
+.*** core_0 : ('ip link del core_0-eth2',)
+*** aggr_2 : ('ip link del aggr_2-eth1',)
+Cannot find device "aggr_2-eth1"
+.*** core_0 : ('ip link del core_0-eth3',)
+*** aggr_4 : ('ip link del aggr_4-eth1',)
+Cannot find device "aggr_4-eth1"
+.*** core_0 : ('ip link del core_0-eth4',)
+*** aggr_6 : ('ip link del aggr_6-eth1',)
+Cannot find device "aggr_6-eth1"
+.*** core_1 : ('ip link del core_1-eth1',)
+*** aggr_0 : ('ip link del aggr_0-eth2',)
+Cannot find device "aggr_0-eth2"
+.*** core_1 : ('ip link del core_1-eth2',)
+*** aggr_2 : ('ip link del aggr_2-eth2',)
+Cannot find device "aggr_2-eth2"
+.*** core_1 : ('ip link del core_1-eth3',)
+*** aggr_4 : ('ip link del aggr_4-eth2',)
+Cannot find device "aggr_4-eth2"
+.*** core_1 : ('ip link del core_1-eth4',)
+*** aggr_6 : ('ip link del aggr_6-eth2',)
+Cannot find device "aggr_6-eth2"
+.*** core_2 : ('ip link del core_2-eth1',)
+*** aggr_1 : ('ip link del aggr_1-eth1',)
+Cannot find device "aggr_1-eth1"
+.*** core_2 : ('ip link del core_2-eth2',)
+*** aggr_3 : ('ip link del aggr_3-eth1',)
+Cannot find device "aggr_3-eth1"
+.*** core_2 : ('ip link del core_2-eth3',)
+*** aggr_5 : ('ip link del aggr_5-eth1',)
+Cannot find device "aggr_5-eth1"
+.*** core_2 : ('ip link del core_2-eth4',)
+*** aggr_7 : ('ip link del aggr_7-eth1',)
+Cannot find device "aggr_7-eth1"
+.*** core_3 : ('ip link del core_3-eth1',)
+*** aggr_1 : ('ip link del aggr_1-eth2',)
+Cannot find device "aggr_1-eth2"
+.*** core_3 : ('ip link del core_3-eth2',)
+*** aggr_3 : ('ip link del aggr_3-eth2',)
+Cannot find device "aggr_3-eth2"
+.*** core_3 : ('ip link del core_3-eth3',)
+*** aggr_5 : ('ip link del aggr_5-eth2',)
+Cannot find device "aggr_5-eth2"
+.*** core_3 : ('ip link del core_3-eth4',)
+*** aggr_7 : ('ip link del aggr_7-eth2',)
+Cannot find device "aggr_7-eth2"
+.*** edge_0 : ('ip link del edge_0-eth3',)
+*** host_0 : ('ip link del host_0-eth0',)
+Cannot find device "host_0-eth0"
+.*** edge_0 : ('ip link del edge_0-eth4',)
+*** host_1 : ('ip link del host_1-eth0',)
+Cannot find device "host_1-eth0"
+.*** edge_1 : ('ip link del edge_1-eth3',)
+*** host_2 : ('ip link del host_2-eth0',)
+Cannot find device "host_2-eth0"
+.*** edge_1 : ('ip link del edge_1-eth4',)
+*** host_3 : ('ip link del host_3-eth0',)
+Cannot find device "host_3-eth0"
+.*** edge_2 : ('ip link del edge_2-eth3',)
+*** host_4 : ('ip link del host_4-eth0',)
+Cannot find device "host_4-eth0"
+.*** edge_2 : ('ip link del edge_2-eth4',)
+*** host_5 : ('ip link del host_5-eth0',)
+Cannot find device "host_5-eth0"
+.*** edge_3 : ('ip link del edge_3-eth3',)
+*** host_6 : ('ip link del host_6-eth0',)
+Cannot find device "host_6-eth0"
+.*** edge_3 : ('ip link del edge_3-eth4',)
+*** host_7 : ('ip link del host_7-eth0',)
+Cannot find device "host_7-eth0"
+.*** edge_4 : ('ip link del edge_4-eth3',)
+*** host_8 : ('ip link del host_8-eth0',)
+Cannot find device "host_8-eth0"
+.*** edge_4 : ('ip link del edge_4-eth4',)
+*** host_9 : ('ip link del host_9-eth0',)
+Cannot find device "host_9-eth0"
+.*** edge_5 : ('ip link del edge_5-eth3',)
+*** host_10 : ('ip link del host_10-eth0',)
+Cannot find device "host_10-eth0"
+.*** edge_5 : ('ip link del edge_5-eth4',)
+*** host_11 : ('ip link del host_11-eth0',)
+Cannot find device "host_11-eth0"
+.*** edge_6 : ('ip link del edge_6-eth3',)
+*** host_12 : ('ip link del host_12-eth0',)
+Cannot find device "host_12-eth0"
+.*** edge_6 : ('ip link del edge_6-eth4',)
+*** host_13 : ('ip link del host_13-eth0',)
+Cannot find device "host_13-eth0"
+.*** edge_7 : ('ip link del edge_7-eth3',)
+*** host_14 : ('ip link del host_14-eth0',)
+Cannot find device "host_14-eth0"
+.*** edge_7 : ('ip link del edge_7-eth4',)
+*** host_15 : ('ip link del host_15-eth0',)
+Cannot find device "host_15-eth0"
+
+*** Stopping 20 switches
+*** errRun: ['ovs-vsctl', '--if-exists', 'del-br', 'aggr_0', '--', '--if-exists', 'del-br', 'aggr_1', '--', '--if-exists', 'del-br', 'aggr_2', '--', '--if-exists', 'del-br', 'aggr_3', '--', '--if-exists', 'del-br', 'aggr_4', '--', '--if-exists', 'del-br', 'aggr_5', '--', '--if-exists', 'del-br', 'aggr_6', '--', '--if-exists', 'del-br', 'aggr_7', '--', '--if-exists', 'del-br', 'core_0', '--', '--if-exists', 'del-br', 'core_1', '--', '--if-exists', 'del-br', 'core_2', '--', '--if-exists', 'del-br', 'core_3', '--', '--if-exists', 'del-br', 'edge_0', '--', '--if-exists', 'del-br', 'edge_1', '--', '--if-exists', 'del-br', 'edge_2', '--', '--if-exists', 'del-br', 'edge_3', '--', '--if-exists', 'del-br', 'edge_4', '--', '--if-exists', 'del-br', 'edge_5', '--', '--if-exists', 'del-br', 'edge_6', '--', '--if-exists', 'del-br', 'edge_7'] 
+  0*** errRun: ['kill', '-HUP', '4173', '4176', '4179', '4182', '4185', '4188', '4191', '4194', '4197', '4200', '4203', '4206', '4209', '4212', '4215', '4218', '4221', '4224', '4227', '4230'] 
+  0waiting for 4173 to terminate
+waiting for 4176 to terminate
+waiting for 4179 to terminate
+waiting for 4182 to terminate
+waiting for 4185 to terminate
+waiting for 4188 to terminate
+waiting for 4191 to terminate
+waiting for 4194 to terminate
+waiting for 4197 to terminate
+waiting for 4200 to terminate
+waiting for 4203 to terminate
+waiting for 4206 to terminate
+waiting for 4209 to terminate
+waiting for 4212 to terminate
+waiting for 4215 to terminate
+waiting for 4218 to terminate
+waiting for 4221 to terminate
+waiting for 4224 to terminate
+waiting for 4227 to terminate
+waiting for 4230 to terminate
+aggr_0 aggr_1 aggr_2 aggr_3 aggr_4 aggr_5 aggr_6 aggr_7 core_0 core_1 core_2 core_3 edge_0 edge_1 edge_2 edge_3 edge_4 edge_5 edge_6 edge_7 
+*** Stopping 16 hosts
+host_0 waiting for 4138 to terminate
+host_1 waiting for 4140 to terminate
+host_2 waiting for 4142 to terminate
+host_3 waiting for 4144 to terminate
+host_4 waiting for 4146 to terminate
+host_5 waiting for 4148 to terminate
+host_6 waiting for 4150 to terminate
+host_7 waiting for 4152 to terminate
+host_8 waiting for 4154 to terminate
+host_9 waiting for 4156 to terminate
+host_10 waiting for 4158 to terminate
+host_11 waiting for 4160 to terminate
+host_12 waiting for 4162 to terminate
+host_13 waiting for 4164 to terminate
+host_14 waiting for 4166 to terminate
+host_15 waiting for 4168 to terminate
+
+*** Done
+completed in 23.057 seconds
